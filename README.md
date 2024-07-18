@@ -92,6 +92,15 @@ python evalution_states.py
 
 ### Reference
 ```bibtex
+@inproceedings{orchard2013spiking,
+  title={A spiking neural network architecture for visual motion estimation},
+  author={Orchard, Garrick and Benosman, Ryad and Etienne-Cummings, Ralph and Thakor, Nitish V},
+  booktitle={2013 IEEE Biomedical Circuits and Systems Conference (BioCAS)},
+  pages={298--301},
+  year={2013},
+  organization={IEEE}
+}
+
 @article{orchard2014bioinspired,
   title={Bioinspired visual motion estimation},
   author={Orchard, Garrick and Etienne-Cummings, Ralph},
@@ -103,19 +112,18 @@ python evalution_states.py
   publisher={IEEE}
 }
 
-@inproceedings{orchard2013spiking,
-  title={A spiking neural network architecture for visual motion estimation},
-  author={Orchard, Garrick and Benosman, Ryad and Etienne-Cummings, Ralph and Thakor, Nitish V},
-  booktitle={2013 IEEE Biomedical Circuits and Systems Conference (BioCAS)},
-  pages={298--301},
-  year={2013},
-  organization={IEEE}
-}
-
 @InProceedings{Gehrig3dv2021,
   author = {Mathias Gehrig and Mario Millh\"ausler and Daniel Gehrig and Davide Scaramuzza},
   title = {E-RAFT: Dense Optical Flow from Event Cameras},
   booktitle = {International Conference on 3D Vision (3DV)},
   year = {2021}
+}
+
+@inproceedings{sabater2022event,
+  title={Event transformer. a sparse-aware solution for efficient event data processing},
+  author={Sabater, Alberto and Montesano, Luis and Murillo, Ana C},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2677--2686},
+  year={2022}
 }
 ```
