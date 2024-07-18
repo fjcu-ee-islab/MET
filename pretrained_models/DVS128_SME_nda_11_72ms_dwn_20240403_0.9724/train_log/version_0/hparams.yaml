@@ -1,0 +1,90 @@
+backbone_params:
+  downsample_pos_enc: 1
+  embed_dim: 128
+  event_projection:
+    name: MLP
+    params:
+      init_layers:
+      - ff_96_gel
+  h_mode: add
+  latent_vecs_to_return: vertical
+  mem_hor_indep_lvls: all
+  model_version: v3
+  num_latent_horizontal: 0
+  num_latent_vertical: 96
+  num_levels: 1
+  pos_enc_grad: true
+  pos_enc_mode: concat
+  pos_encoding:
+    name: fourier
+    params:
+      bands: 16
+      shape: !!python/tuple
+      - 128
+      - 128
+  preproc_events:
+    name: MLP
+    params:
+      init_layers:
+      - ff_-1_gel
+  proc_embs:
+    clf_mode: gap
+    embs_norm: true
+    params: {}
+  proc_events:
+    indep_lvls: all
+    name: MLP
+    params:
+      add_x_input: true
+      dropout: 0.1
+      init_layers:
+      - ff_-1_rel
+      - ff_-1_rel
+  proc_memory:
+    indep_lvls: all
+    name: TransformerBlock
+    params:
+      att_dropout: 0.0
+      cross_heads: 4
+      dropout: 0.1
+      extra_add: true
+      extra_att_norm: true
+      heads: 4
+      latent_blocks: 2
+  return_last_q: false
+  token_dim: 144
+  v_mode: add
+clf_params:
+  lvl_embs:
+  - -1
+  opt_classes: 11
+contrastive_params: {}
+loss_weights: !!python/object/apply:torch._utils._rebuild_tensor_v2
+- !!python/object/apply:torch.storage._load_from_bytes
+  - !!binary |
+    gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+    AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+    aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+    Z2UKcQFYCAAAADk4MjI2NjU2cQJYAwAAAGNwdXEDSwtOdHEEUS6AAl1xAFgIAAAAOTgyMjY2NTZx
+    AWEuCwAAAAAAAAC59Iw/g4SLP4OEiz+DhIs/g4SLP4OEiz+9G4o/g4QLP4OEiz+59Iw/g4SLPw==
+- 0
+- !!python/tuple
+  - 11
+- !!python/tuple
+  - 1
+- false
+- !!python/object/apply:collections.OrderedDict
+  - []
+one_sample_per_chunk: false
+optim_params:
+  double_fit: false
+  monitor: val_loss_total
+  optim: adamw
+  optim_params:
+    lr: 0.001
+  scheduler:
+    name: one_cycle_lr
+    params:
+      epochs: 240
+      steps_per_epoch: 1
+  use_sam: false

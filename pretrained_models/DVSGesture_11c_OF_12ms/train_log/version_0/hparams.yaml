@@ -1,0 +1,65 @@
+backbone_params:
+  downsample_pos_enc: 6
+  embed_dim: 128
+  event_projection:
+    name: MLP
+    params:
+      init_layers:
+      - ff_96_gel
+  memory_self_att:
+    name: self_att_Block
+    params:
+      att_dropout: 0.0
+      dropout: 0.1
+      heads: 4
+      latent_blocks: 1
+  num_latent_vectors: 96
+  pos_enc_grad: true
+  pos_encoding:
+    name: fourier
+    params:
+      bands: 16
+      shape:
+      - 128
+      - 128
+  preproc_events:
+    name: MLP
+    params:
+      init_layers:
+      - ff_-1_gel
+  proc_embs:
+    clf_mode: gap
+    embs_norm: true
+    params: {}
+  proc_events:
+    name: MLP
+    params:
+      add_x_input: true
+      dropout: 0.1
+      init_layers:
+      - ff_-1_rel
+      - ff_-1_rel
+  proc_memory:
+    name: TransformerBlock
+    params:
+      att_dropout: 0.0
+      cross_heads: 4
+      dropout: 0.1
+      heads: 4
+      latent_blocks: 2
+  return_last_q: false
+  token_dim: 216
+clf_params:
+  lvl_embs:
+  - -1
+  opt_classes: 11
+loss_weights: null
+optim_params:
+  monitor: val_loss_total
+  optim_params:
+    lr: 0.001
+  scheduler:
+    name: one_cycle_lr
+    params:
+      epochs: 500
+      steps_per_epoch: 1
