@@ -3,14 +3,14 @@ This repository contains the official code from __Multi-modal event transformer_
 
 ### Repository requirements
 
-[1] First, install Anaconda, then create an environment using the command line with the following commands:
+Step 1. First, install Anaconda, then create an environment using the command line with the following commands:
 ```
 conda create --name evt python=3.7.10
 conda activate evt
 pip install -r requirements.txt
 ```
 
-[2] After creating the environment, activate it using:
+Step 2. After creating the environment, activate it using:
 ```
 conda activate evt
 ```
@@ -29,6 +29,7 @@ run('parallel_main.m')
 ```
 
 Optical flow estimation (E-Raft):
+
 Step 1. Install Anaconda, then create an environment using the command line with the following command:
 ```
 conda env create --file environment.yml
@@ -88,4 +89,33 @@ Evaluation results include FLOPs, parameters, average activated patches, average
 ```
 python evalution_states.py
 ```
-# MMET
+
+### Reference
+```bibtex
+@article{orchard2014bioinspired,
+  title={Bioinspired visual motion estimation},
+  author={Orchard, Garrick and Etienne-Cummings, Ralph},
+  journal={Proceedings of the IEEE},
+  volume={102},
+  number={10},
+  pages={1520--1536},
+  year={2014},
+  publisher={IEEE}
+}
+
+@inproceedings{orchard2013spiking,
+  title={A spiking neural network architecture for visual motion estimation},
+  author={Orchard, Garrick and Benosman, Ryad and Etienne-Cummings, Ralph and Thakor, Nitish V},
+  booktitle={2013 IEEE Biomedical Circuits and Systems Conference (BioCAS)},
+  pages={298--301},
+  year={2013},
+  organization={IEEE}
+}
+
+@InProceedings{Gehrig3dv2021,
+  author = {Mathias Gehrig and Mario Millh\"ausler and Daniel Gehrig and Davide Scaramuzza},
+  title = {E-RAFT: Dense Optical Flow from Event Cameras},
+  booktitle = {International Conference on 3D Vision (3DV)},
+  year = {2021}
+}
+```
