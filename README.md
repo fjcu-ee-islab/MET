@@ -6,13 +6,13 @@ This repository contains the official code from __Motion event transformer__.
 Step 1. First, install Anaconda, then create an environment using the command line with the following commands:
 ```
 conda create --name evt python=3.7.10
-conda activate evt
+conda activate met
 pip install -r requirements.txt
 ```
 
 Step 2. After creating the environment, activate it using:
 ```
-conda activate evt
+conda activate met
 ```
 
 ### Dataset prepare
