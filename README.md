@@ -1,4 +1,4 @@
-This repository contains the official code from __Multi-modal event transformer__. 
+This repository contains the official code from __Motion event transformer__. 
 
 
 ### Repository requirements
