@@ -1,4 +1,4 @@
-This repository contains the official code from __Motion event transformer__. 
+This repository contains the official code from __Motion event transformer: Action Recognition Based on Event Transformer with Motion__. 
 
 
 ### Repository requirements
