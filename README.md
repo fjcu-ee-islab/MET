@@ -73,16 +73,16 @@ python dvs128_OF.py
 For datasets such as [SL_Animals], [SL_Animals_VM], [SL_Animals_OF], [UCF11], [UCF11_VM], [UCF11_OF], [IITM], [IITM_VM], [IITM_OF], [Fall detection dataset], [FDD_VM], [FDD_OF], only the corresponding preprocessing script for each dataset needs to be executed.
 
 
-### MMET training
+### MET training
 
 Open train.py and adjust the corresponding pretrain model and weights based on the dataset being used. 
-After verifying everything is correct, you can execute MMET Training with the command:
+After verifying everything is correct, you can execute MET Training with the command:
 ```
 python train.py
 ```
 
 
-### MMET evaluating
+### MET evaluating
 
 Use the command to perform testing on the trained models in the ./pretrained_models/tests/ directory. 
 Evaluation results include FLOPs, parameters, average activated patches, average processing time, and validation accuracy.
