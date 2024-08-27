@@ -1,6 +1,6 @@
 This repository contains the official code from __Motion event transformer: Action Recognition Based on Event Transformer with Motion__. 
 
-![image](https://github.com/user-attachments/assets/da367a44-9c78-45df-9dbb-c65746e97193)
+<img width="612" alt="圖33" src="https://github.com/user-attachments/assets/a143c55a-475c-44ff-99bc-60943e3c4e50">
 
 ### Repository requirements
 
